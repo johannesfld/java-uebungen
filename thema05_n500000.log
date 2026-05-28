@@ -1,0 +1,14 @@
+﻿Hinweis: LinkedList-Index-Zugriffe (Zeilen 3 und 5) sind O(n^2)
+und koennen bei n=500000 mehrere Minuten dauern.
+
+n = 500000
+Operation                                                     ArrayList   LinkedList
+--------------------------------------------------------------------------------------
+anfuegen von n Elementen am Ende                                   11 ms          9 ms
+einschieben von n Elementen am Anfang                            9968 ms         20 ms
+sequentieller Zugriff per Index (get(i))                            6 ms     155666 ms
+sequentieller Zugriff per Iterator                                 10 ms          6 ms
+n-mal erstes Element loeschen per Index                         11292 ms          5 ms
+n-mal erstes Element loeschen per Iterator                      11915 ms         12 ms
+400 000 + 100 000 ab Index 1000 einzeln                          4035 ms       9216 ms
+400 000 + 100 000 ab Index 1000 als Collection                      3 ms          3 ms
