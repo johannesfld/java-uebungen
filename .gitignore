@@ -4,3 +4,4 @@ sources.txt
 .idea/
 *.iml
 .vscode/
+*.log
