@@ -8,12 +8,10 @@ public class Main {
             try {
                 n = Integer.parseInt(args[0]);
             } catch (NumberFormatException e) {
-                System.out.println("Ungueltige Zahl, nutze Default 500000.");
+                System.out.println("Ungueltige Zahl, nehme 500000.");
             }
         }
-        System.out.println("Hinweis: LinkedList-Index-Zugriffe (Zeilen 3 und 5) sind O(n^2)");
-        System.out.println("und koennen bei n=500000 mehrere Minuten dauern.");
-        System.out.println();
+        // Achtung: bei grossem n koennen die LinkedList-Index-Operationen lange dauern
         new ListenPerformance(n).runAll();
     }
 }
